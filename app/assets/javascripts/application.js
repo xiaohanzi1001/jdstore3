@@ -21,6 +21,6 @@ $(window).scroll(function () {
   if ($(this).scrollTop() > 125) {
     $('#navbar').addClass('show_bgcolor')
   } else {
-    $('#navbar').removeClass('show_bgcolor') 
+    $('#navbar').removeClass('show_bgcolor')
   }
 })
