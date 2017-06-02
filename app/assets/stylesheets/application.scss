@@ -22,38 +22,38 @@
 
  .navbar-default {
 
-    background-color: #ffedf4;
-     border-color: #ffedf4;
+    background-color: #B10149;
+     border-color: #B10149;
      margin-bottom: 0;
      border-radius: 0;
  }
 
  .navbar-default .navbar-brand {
-     color: #606060;
+     color: #f5f2f0;
      padding: 10px 15px;
      line-height: 30px;
  }
 
  .navbar-default .navbar-brand:hover,
  .navbar-default .navbar-brand:focus {
-     color: #606060;
+     color: #000000;
      background-color: transparent;
  }
 
  .navbar-default .navbar-nav > li > a {
-     color: #606060;
+     color: #f5f2f0;
  }
 
  .navbar-default .navbar-nav > li > a:hover,
  .navbar-default .navbar-nav > li > a:focus {
-     color: #606060;
+     color: #000000;
      background-color: transparent;
  }
 
  .navbar-default .navbar-nav > .active > a,
  .navbar-default .navbar-nav > .active > a:hover,
  .navbar-default .navbar-nav > .active > a:focus {
-     color: #606060;
+     color: #f5f2f0;
      background-color: transparent;
  }
 
@@ -61,7 +61,7 @@
  .navbar-default .navbar-nav > .open > a:focus,
  .navbar-default .navbar-nav > .open > a:hover {
      background-color: transparent;
-     color: #606060;
+     color: #000000;
  }
 
 
