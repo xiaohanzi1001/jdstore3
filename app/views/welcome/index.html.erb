@@ -1,0 +1,215 @@
+<div class="welcome-box">
+<!--===== 广告轮播 =====-->
+  <section class="intro-box">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="intro" class="carousel slide" data-ride="carousel">
+          <!--===== 轮播按钮 =====-->
+          <ol class="carousel-indicators">
+            <li data-target="#intro" data-slide-to="0" class="active"></li>
+            <li data-target="#intro" data-slide-to="1"></li>
+            <li data-target="#intro" data-slide-to="2"></li>
+          </ol>
+
+          <!--===== 轮播内容 =====-->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <%= link_to '#', target: "_blank" do %> <!-- 图片连结，点击另开视窗 -->
+                <%= image_tag("intro_1.jpg") %> <!-- 图片位置 -->
+                <div class="carousel-caption">
+                  <h3>盎然</h3> <!-- 标题 -->
+                  <p>Pleasure - by yourself & with your partner</p> <!-- 内文 -->
+                </div>
+              <% end %>
+            </div>
+            <div class="item">
+              <%= link_to '#', target: "_blank" do %>
+                <%= image_tag("intro_2.jpg") %>
+                <div class="carousel-caption">
+                  <h3>给 你</h3>
+                  <p>探寻自己
+                    <br> 取悦自己 </br>
+                    <br>独处也欢愉</br>
+                  </p>
+                </div>
+              <% end %>
+            </div>
+            <div class="item">
+              <%= link_to '#', target: "_blank" do %>
+                <%= image_tag("intro_3.jpg") %>
+                <div class="carousel-caption">
+                  <h3>给 你们 </h3>
+                  <p>想激情？
+                    <br> 还是想有趣？</br>
+                    <br> 你们一起决定</br>
+                  </p>
+                </div>
+              <% end %>
+            </div>
+          </div>
+
+          <!--===== 换页按钮 =====-->
+          <a class="left carousel-control" href="#intro" role="button" data-slide="prev">
+            <span class="fa fa-angle-left" aria-hidden="true"></span> <!-- 左侧按钮图示 -->
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#intro" role="button" data-slide="next">
+            <span class="fa fa-angle-right" aria-hidden="true"></span> <!-- 右侧按钮图示 -->
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--===== 品牌故事 =====-->
+    <section class="story-box">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <h2>品牌故事</h2> <!-- 区块标题 -->
+          <h1>盎然</h1> <!-- 品牌名称 -->
+          <div class="short-line"></div> <!-- 分隔线 -->
+          <div class="row">
+            <div class="col-md-3 col-md-offset-1">
+              <%= image_tag("founder_1.png") %> <!-- 创办人头像 1 -->
+            </div>
+            <div class="col-md-7">
+              <h3>Sophie</h3> <!-- 创办人姓名 -->
+              <p>我們希望能為大家帶來種類多樣、價格低廉並且設計獨特，且讓大多數人可以負擔的起的家具家飾品，爲了實現這樣的想法，我們從產品設計、原料採購、生產製造，到在分店中的經營，都不斷在創新和尋求改善。 </p> <!-- 创办人介绍 -->
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-md-7 col-md-offset-1">
+              <h3>Cong</h3> <!-- 创办人姓名 -->
+              <p>我們知道如果要提供顧客便宜、品質又好的商品，企業必須有效的管理成本及運用創新的製造方法，這是從未改變的信念，最有效的利用原料，尋找更經濟、更有效率及更有創意的製作或包裝方式，降低成本，回饋給大家! </p> <!-- 创办人介绍 -->
+            </div>
+            <div class="col-md-3">
+              <%= image_tag("founder_2.png") %> <!-- 创办人头像 2 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--===== 推荐商品 =====-->
+     <section class="show-box">
+       <div class="row">
+         <div class="col-md-10 col-md-offset-1">
+           <h2>推荐商品</h2> <!-- 副标题 -->
+           <div class="short-line"></div> <!-- 分隔线 -->
+           <div class="row">
+             <div class="col-md-3">
+               <%= link_to '#' do %> <!-- 商品连结 -->
+                 <div class="box"><%= image_tag("item_1.jpg") %></div> <!-- 商品图片 -->
+                 <div class="content">
+                   <p>ORA™ 2</p> <!-- 商品名称 -->
+                   <p>$169</p> <!-- 商品价格 -->
+                 </div>
+               <% end %>
+             </div>
+             <div class="col-md-3">
+               <%= link_to '#' do %>
+                 <div class="box"><%= image_tag("item_2.jpg") %></div>
+                 <div class="content">
+                   <p>LUNA Beads™</p>
+                   <p>$54</p>
+                 </div>
+               <% end %>
+             </div>
+             <div class="col-md-3">
+               <%= link_to '#' do %>
+                 <div class="box"><%= image_tag("item_3.jpg") %></div>
+                 <div class="content">
+                   <p>INA Wave™</p>
+                   <p>$17</p>
+                 </div>
+               <% end %>
+             </div>
+             <div class="col-md-3">
+               <%= link_to '#' do %>
+                 <div class="box"><%= image_tag("item_4.jpg") %></div>
+                 <div class="content">
+                   <p>TWENTY ONE</p>
+                   <p>$</p>
+                 </div>
+               <% end %>
+             </div>
+             <div class="col-md-3">
+               <%= link_to '#' do %>
+                 <div class="box"><%= image_tag("item_5.jpg") %></div>
+                 <div class="content">
+                   <p>ODEN™ 2</p>
+                   <p>$18</p>
+                 </div>
+               <% end %>
+             </div>
+             <div class="col-md-3">
+               <%= link_to '#' do %>
+                 <div class="box"><%= image_tag("item_6.jpg") %></div>
+                 <div class="content">
+                   <p>TOR™ 2</p>
+                   <p>$129</p>
+                 </div>
+               <% end %>
+             </div>
+             <div class="col-md-3">
+               <%= link_to '#' do %>
+                 <div class="box"><%= image_tag("item_7.jpg") %></div>
+                 <div class="content">
+                   <p>MIA™ 2</p>
+                   <p>$79</p>
+                 </div>
+               <% end %>
+             </div>
+             <div class="col-md-3">
+               <%= link_to '#' do %>
+                 <div class="box"><%= image_tag("item_8.jpg") %></div>
+                 <div class="content">
+                   <p>ALIA™</p>
+                   <p>$129</p>
+                 </div>
+               <% end %>
+             </div>
+             <div class="col-md-3">
+               <%= link_to '#' do %>
+                 <div class="box"><%= image_tag("item_9.jpg") %></div>
+                 <div class="content">
+                   <p>LILY™ 2</p>
+                   <p>$139</p>
+                 </div>
+               <% end %>
+             </div>
+             <div class="col-md-3">
+               <%= link_to '#' do %>
+                 <div class="box"><%= image_tag("item_10.jpg") %></div>
+                 <div class="content">
+                   <p>IDA™</p>
+                   <p>$169</p>
+                 </div>
+               <% end %>
+             </div>
+             <div class="col-md-3">
+               <%= link_to '#' do %>
+                 <div class="box"><%= image_tag("item_11.jpg") %></div>
+                 <div class="content">
+                   <p>GIGI™ 2</p>
+                   <p>$139</p>
+                 </div>
+               <% end %>
+             </div>
+             <div class="col-md-3">
+               <%= link_to '#' do %>
+                 <div class="box"><%= image_tag("item_12.jpg") %></div>
+                 <div class="content">
+                   <p>HULA Beads™</p>
+                   <p>$179</p>
+                 </div>
+               <% end %>
+             </div>
+           </div>
+         </div>
+       </div>
+     </section>
+
+</div>
