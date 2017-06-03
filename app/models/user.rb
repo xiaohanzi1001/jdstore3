@@ -7,4 +7,6 @@ class User < ApplicationRecord
     is_admin
   end
   has_many :orders
+  has_many :favorites
+  has_many :products, through: :favorites, source: :product
 end
