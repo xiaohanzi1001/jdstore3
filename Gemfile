@@ -41,6 +41,7 @@ gem 'aasm'
 gem 'figaro'
 gem 'carrierwave-qiniu'
 gem 'qiniu-rs'
+gem "intercom-rails"
 
 
 group :development, :test do

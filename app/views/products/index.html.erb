@@ -9,6 +9,13 @@
         <% end %>
       <% end %>
       <%= product.title %> ￥ <%= product.price %>
+
+      <% if !product.users.include?(current_user) %>
+        <%= link_to("",add_to_favorite_product_path(product),method: :post, class: "fa fa-heart") %>
+      <% else %>
+        <%= link_to("", quit_favorite_product_path(product),method: :post,  class: "fa fa-heart", style: "color:red;") %>
+      <% end %>
+
     </div>
   <% end %>
 </div>
