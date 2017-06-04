@@ -51,9 +51,13 @@ body {
  //---------Navbar---------
 
  .navbar-default {
+   background: rgba(0,0,0,0.3);
+   &.show_bgcolor {
 
-    background-color: #00695C;
-     border-color: #00695C;
+    background-color: transparent;
+     border-color: transparent;
+   }
+   
      margin-bottom: 0;
      border-radius: 0;
  }
