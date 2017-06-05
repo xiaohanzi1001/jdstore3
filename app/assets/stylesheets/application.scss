@@ -71,7 +71,7 @@ body {
 
  .navbar-default .navbar-brand:hover,
  .navbar-default .navbar-brand:focus {
-     color: #000000;
+     color: #b5005b;
      background-color: transparent;
  }
 
@@ -81,7 +81,7 @@ body {
 
  .navbar-default .navbar-nav > li > a:hover,
  .navbar-default .navbar-nav > li > a:focus {
-     color: #000000;
+     color: #b5005b;
      background-color: transparent;
  }
 
@@ -96,7 +96,7 @@ body {
  .navbar-default .navbar-nav > .open > a:focus,
  .navbar-default .navbar-nav > .open > a:hover {
      background-color: transparent;
-     color: #000000;
+     color: #b5005b;
  }
 
 
@@ -110,7 +110,7 @@ body {
 
    /* 短分隔线 */
    .short-line {
-     background: #0070DE;
+     background: #000000;
      margin: 15px auto 30px auto;
      width: 150px;
      height: 1.5px;
@@ -134,8 +134,8 @@ body {
 
    /* 按钮-鼠标滑动效果 */
    .btn-push:hover {
-     background-color: #0070DE;
-     border-color: #0070DE;
+     background-color: #b5005b;
+     border-color: #b5005b;
    }
  }
 
@@ -354,4 +354,13 @@ body {
 
 .login-help{
   font-size: 12px;
+}
+
+/*===== Push 首页-立即购买 =====*/
+.push-box {
+  /* 区块 */
+  text-align: center;
+  padding: 75px 0 0 0;
+  height: 200px;
+  background: image_url("start.jpg") no-repeat scroll top center/ cover; //背景图片
 }
