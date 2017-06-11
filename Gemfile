@@ -42,6 +42,8 @@ gem 'figaro'
 gem 'carrierwave-qiniu'
 gem 'qiniu-rs'
 gem "intercom-rails"
+gem "rails-i18n"
+gem "devise-i18n"
 
 
 group :development, :test do
