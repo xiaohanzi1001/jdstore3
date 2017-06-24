@@ -67,7 +67,7 @@
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
           <h2>品牌故事</h2> <!-- 区块标题 -->
-          <h1>盎然</h1> <!-- 品牌名称 -->
+          <h1><i class="fa fa-google-wallet"></i>盎然</h1> <!-- 品牌名称 -->
           <div class="short-line"></div> <!-- 分隔线 -->
           <div class="row">
             <div class="col-md-3 col-md-offset-1">
@@ -75,14 +75,14 @@
             </div>
             <div class="col-md-7">
               <h3>Sophie</h3> <!-- 创办人姓名 -->
-              <p>我們希望能為大家帶來種類多樣、價格低廉並且設計獨特，且讓大多數人可以負擔的起的家具家飾品，爲了實現這樣的想法，我們從產品設計、原料採購、生產製造，到在分店中的經營，都不斷在創新和尋求改善。 </p> <!-- 创办人介绍 -->
+              <p>小的时候我们都喜欢toys，长大了呢？长大也可以啊！你可以在这里挑选好看又有趣的玩具，探寻自己、取悦伴侣，享受性趣盎然！ </p> <!-- 创办人介绍 -->
             </div>
           </div>
           <hr />
           <div class="row">
             <div class="col-md-7 col-md-offset-1">
               <h3>Cong</h3> <!-- 创办人姓名 -->
-              <p>我們知道如果要提供顧客便宜、品質又好的商品，企業必須有效的管理成本及運用創新的製造方法，這是從未改變的信念，最有效的利用原料，尋找更經濟、更有效率及更有創意的製作或包裝方式，降低成本，回饋給大家! </p> <!-- 创办人介绍 -->
+              <p>我们提供一种性感，唯美的生活方式；一种高品质，安全至上的质量保证；和悦己，积极的生活态度。姐妹们，不要压抑自己的天性，一起来玩玩具吧。 </p> <!-- 创办人介绍 -->
             </div>
             <div class="col-md-3">
               <%= image_tag("founder_2.png") %> <!-- 创办人头像 2 -->
@@ -91,6 +91,7 @@
         </div>
       </div>
     </section>
+
 
     <!--===== 推荐商品 =====-->
      <section class="show-box">
@@ -131,7 +132,7 @@
                  <div class="box"><%= image_tag("item_4.jpg") %></div>
                  <div class="content">
                    <p>TWENTY ONE</p>
-                   <p>$</p>
+                   <p>$80</p>
                  </div>
                <% end %>
              </div>
@@ -140,7 +141,7 @@
                  <div class="box"><%= image_tag("item_5.jpg") %></div>
                  <div class="content">
                    <p>ODEN™ 2</p>
-                   <p>$18</p>
+                   <p>$180</p>
                  </div>
                <% end %>
              </div>
@@ -211,5 +212,8 @@
          </div>
        </div>
      </section>
-
-</div>
+     <!--===== 立即购买 =====-->
+      <section class="push-box">
+        <%= link_to('立即购买', '#', class:'btn btn-push' ) %>
+      </section>
+    </div>
