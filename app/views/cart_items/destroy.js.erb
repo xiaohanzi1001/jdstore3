@@ -1,0 +1,4 @@
+$("#cart_item-<%= @cart_item.id %>").remove();
+$("#cart_items_counts").html("<%= current_cart.products.count%>");
+$("#cart_items_total_price").html("总计 <%= render_cart_total_price(current_cart)%> RMB");
+// alert("hello");

@@ -1,71 +1,38 @@
+<div class="col-md-12">
+  <div class="row box">
+    <div class="box-inner col-md-6 col-md-offset-3">
+      <h3 class="title"></h3>
+      <p class="slogan">
+        <br>
+
+      </br>
+      <br></br>
+      <br></br>
+      </p>
+
+    </div>
+  </div>
+</div>
+
+
 <div class="row">
   <div class="col-md-12">
-    <%= link_to("清空购物车", clean_carts_path ,
-              method: :delete , class: "pull-right",
-              style: "text-decoration: underline;",
-              data: { confirm: "你确定要清空整个购物车吗？"} )%>
-
-    <h2> 购物车 </h2>
-
-    <table class="table table-bordered">
-      <thead>
-        <tr>
-          <th colspan="2">商品资讯</th>
-          <th>单价</th>
-          <th>数量</th>
-          <th>操作选项 </th>
-        </tr>
-      </thead>
-      <tbody>
-
-        <% current_cart.cart_items.each do |cart_item| %>
-          <tr>
-            <td>
-              <%= link_to product_path(cart_item.product) do %>
-                <% if cart_item.product.image.present? %>
-                  <%= image_tag(cart_item.product.image.thumb.url, class: "thumbnail") %>
-                <% else %>
-                  <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
-                <% end %>
-              <% end %>
-            </td>
-            <td>
-              <%= link_to(cart_item.product.title, product_path(cart_item.product)) %>
-            </td>
-            <td>
-              <%= cart_item.product.price %>
-            </td>
-            <td>
-              <%= form_for cart_item, url: cart_item_path(cart_item.product_id) do |f| %>
-           <%= f.select :quantity, 1..cart_item.product.quantity %>
-           <%= f.submit "更新", data: { disable_with: "Submiting..." } %>
-         <% end %>
-            </td>
-            <td>
-             <%= link_to cart_item_path(cart_item.product_id), method: :delete do %>
-               <i class="fa fa-trash"></i>
-             <% end %>
-           </td>
-          </tr>
-        <% end %>
-
-      </tbody>
-    </table>
-
-    <br>
-
-    <div class="total clearfix">
-      <span class="pull-right">
-         <span>
-           总计 <%= render_cart_total_price(current_cart) %> RMB
-         </span>
-      </span>
+    <h2>购物车</h2>
+    <div class="pull-right" style="margin-bottom: 10px; margin-top:-50px;">
+      <%= link_to("清空购物车", clean_carts_path, method: :delete, class: "btn btn-danger")%>
     </div>
 
-    <hr>
-
-    <div class="checkout clearfix">
-      <%= link_to("确认结账", checkout_carts_path, method: :post, class: "btn btn-lg btn-danger pull-right") %>
+    <div class="shopping-cart clearfix">
+       <label class="col-md-2 product-image-cart">商品</label>
+       <label class="col-md-2 product-title-cart">名称</label>
+       <label class="col-md-2 product-price-cart">单价</label>
+       <label class="col-md-2 product-quantity-cart">数量</label>
+       <label class="col-md-2 product-line-price-cart">小计</label>
+       <label class="col-md-2 product-removal-cart">操作</label>
     </div>
+    <div class="cart_items">
+      <%= render :partial => "cart_items" %>
+    </div>
+
   </div>
 </div>

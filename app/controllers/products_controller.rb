@@ -28,10 +28,12 @@ class ProductsController < ApplicationController
      @product = Product.find_by_friendly_id!(params[:id])
      if !current_cart.products.include?(@product)
        current_cart.add_product_to_cart(@product)
-       flash[:notice] = "你已成功将 #{@product.title} 加入购物车"
+       flash.now[:notice] = "你已成功将 #{@product.title} 加入购物车"
      else
-       flash[:warning] = "你的购物车内已有此物品"
+       @cart = current_cart
+      @cart_item = @cart.cart_items.find_by(product_id: params[:id])
+       flash.now[:warning] = "你的购物车内已有此物品"
      end
-     redirect_to :back
+    # redirect_to :back
    end
 end

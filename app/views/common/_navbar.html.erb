@@ -38,9 +38,10 @@
                 <i class="nav navbar-nav"> </i>
               </li>
               <li>
-                <%= link_to carts_path do  %>
-                购物车 <i class="fa fa-shopping-cart"> </i> ( <%= current_cart.products.count %> )
-                <% end %>
+                <%= link_to carts_path do %>
+          购物车<i class="fa fa-shopping-cart"></i>
+          (<span id="cart_items_counts"><%= current_cart.products.count%></span>)
+          <% end %>
               </li>
               <% if !current_user %>
                 <li><%= link_to("注册", new_user_registration_path) %> </li>

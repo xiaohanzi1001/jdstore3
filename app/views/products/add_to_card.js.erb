@@ -1,0 +1,3 @@
+$("#cart_items_list").prepend("<%=j render :partial => "carts/cart_item", :locals => { :cart_item => @cart_item }%>");
+$("#cart_items_counts").html("<%= current_cart.products.count%>");
+// alert('<%= escape_javascript(flash.now[:notice]) %>');
