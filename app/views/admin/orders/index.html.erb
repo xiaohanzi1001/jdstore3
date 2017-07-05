@@ -1,4 +1,41 @@
+<div class="col-md-12">
+  <div class="row box">
+    <div class="box-inner col-md-6 col-md-offset-3">
+      <h3 class="title"></h3>
+      <p class="slogan">
+        <br>
+
+      </br>
+      <br></br>
+      <br></br>
+      </p>
+
+    </div>
+  </div>
+</div>
+<script src="//cdn.bootcss.com/Chart.js/2.5.0/Chart.bundle.min.js"></script>
 <h2>订单列表 </h2>
+<canvas id="myChart1" width="400" height="200"></canvas>
+  <script>
+  var ctx1 = document.getElementById("myChart1");
+  var myChart1 = new Chart(ctx1, {
+      type: 'bar',
+      data: <%= raw @data1.to_json %>,
+      options: {
+          scales: {
+              yAxes: [{
+                  ticks: {
+                      beginAtZero:true
+                  }
+              }]
+          }
+      }
+  });
+  </script>
+
+  <hr>
+
+
 
 <table class="table table-bordered">
   <thead>
